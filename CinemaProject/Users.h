@@ -5,5 +5,5 @@
 extern QString usernames[100];
 extern QString passwords[100];
 extern int ages[100];
-extern int userCount;
+extern int usersCount;
 #endif // USERS_H

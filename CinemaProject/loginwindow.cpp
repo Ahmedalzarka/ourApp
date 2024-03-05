@@ -1,6 +1,8 @@
 #include "loginwindow.h"
-#include "users.h"
 #include "ui_loginwindow.h"
+#include "Users.h"
+#include "welcomewindow.h"
+
 
 LoginWindow::LoginWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -16,21 +18,27 @@ LoginWindow::~LoginWindow()
     delete ui;
 }
 
-void LoginWindow::on_pushButton_3_clicked()
+
+void LoginWindow::on_pushButtonLogin_clicked()
 {
     QString username = ui->username->text();
     QString password = ui->password->text();
-    bool flag = false;
-    for(int i = 0; i < 100; i++)
+    bool sucessful_login = false;
+    for(int i = 0; i < usersCount; i++)
     {
-        if(usernames[i] == username && password == passwords[i])
+        if (username == usernames[i] && password == passwords[i])
         {
-            flag = true;
-            break;
+            sucessful_login=true;
+            Welcomewindow* welcomewindow = new Welcomewindow(username);
+            welcomewindow->show();
+            this->close();
         }
     }
 
-    if(!flag)
+    if(!sucessful_login)
         ui->error->setVisible(true);
+
 }
+
+
 

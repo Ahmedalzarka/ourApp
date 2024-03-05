@@ -11,14 +11,17 @@ CONFIG += c++17
 SOURCES += \
     Users.cpp \
     main.cpp \
-    loginwindow.cpp
+    loginwindow.cpp \
+    welcomewindow.cpp
 
 HEADERS += \
     Users.h \
-    loginwindow.h
+    loginwindow.h \
+    welcomewindow.h
 
 FORMS += \
-    loginwindow.ui
+    loginwindow.ui \
+    welcomewindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
