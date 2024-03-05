@@ -1,17 +1,17 @@
 #include "welcomewindow.h"
-#include "ui_welcomewindow.h"
 #include <QPixmap>
 #include "loginwindow.h"
+#include "ui_welcomewindow.h"
 
-Welcomewindow::Welcomewindow(QString username, QWidget *parent) :
-    QDialog(parent),
-    ui(new Ui::Welcomewindow)
+Welcomewindow::Welcomewindow(QString username, QWidget *parent)
+    : QDialog(parent)
+    , ui(new Ui::Welcomewindow)
 {
     ui->setupUi(this);
-    QPixmap pix ("F:\\AUC\\Trials\\QT\\Cinemaroject\\welcome2.jpg");
+    QPixmap pix("F:\\AUC\\Trials\\QT\\Cinemaroject\\welcome2.jpg");
     int w = ui->img->width();
     int h = ui->img->height();
-    ui->img->setPixmap(pix.scaled(w,h, Qt::KeepAspectRatio));
+    ui->img->setPixmap(pix.scaled(w, h, Qt::KeepAspectRatio));
     ui->name->setText(username);
 }
 
@@ -23,6 +23,6 @@ Welcomewindow::~Welcomewindow()
 void Welcomewindow::on_pushButton_clicked()
 {
     hide();
-    LoginWindow* loginWindow = new LoginWindow(this);
+    LoginWindow *loginWindow = new LoginWindow(this);
     loginWindow->show();
 }

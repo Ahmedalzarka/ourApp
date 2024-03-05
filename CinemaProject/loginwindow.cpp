@@ -19,7 +19,13 @@ LoginWindow::~LoginWindow()
 }
 
 
-void LoginWindow::on_pushButtonLogin_clicked()
+
+
+
+
+
+
+void LoginWindow::on_pushButton_3_clicked()
 {
     QString username = ui->username->text();
     QString password = ui->password->text();
@@ -32,13 +38,11 @@ void LoginWindow::on_pushButtonLogin_clicked()
             Welcomewindow* welcomewindow = new Welcomewindow(username);
             welcomewindow->show();
             this->close();
+            break;
         }
     }
 
     if(!sucessful_login)
         ui->error->setVisible(true);
-
 }
-
-
 

@@ -1,12 +1,12 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'loginwindow.h'
+** Meta object code from reading C++ file 'welcomewindow.h'
 **
 ** Created by: The Qt Meta Object Compiler version 68 (Qt 6.6.2)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../../CinemaProject/loginwindow.h"
+#include "../../CinemaProject/welcomewindow.h"
 #include <QtCore/qmetatype.h>
 
 #if __has_include(<QtCore/qtmochelpers.h>)
@@ -19,7 +19,7 @@ QT_BEGIN_MOC_NAMESPACE
 #include <memory>
 
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'loginwindow.h' doesn't include <QObject>."
+#error "The header file 'welcomewindow.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 68
 #error "This file was generated using the moc from 6.6.2. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -36,36 +36,36 @@ QT_WARNING_DISABLE_GCC("-Wuseless-cast")
 namespace {
 
 #ifdef QT_MOC_HAS_STRINGDATA
-struct qt_meta_stringdata_CLASSLoginWindowENDCLASS_t {};
-constexpr auto qt_meta_stringdata_CLASSLoginWindowENDCLASS = QtMocHelpers::stringData(
-    "LoginWindow",
-    "on_pushButton_3_clicked",
+struct qt_meta_stringdata_CLASSWelcomewindowENDCLASS_t {};
+constexpr auto qt_meta_stringdata_CLASSWelcomewindowENDCLASS = QtMocHelpers::stringData(
+    "Welcomewindow",
+    "on_pushButton_clicked",
     ""
 );
 #else  // !QT_MOC_HAS_STRING_DATA
-struct qt_meta_stringdata_CLASSLoginWindowENDCLASS_t {
+struct qt_meta_stringdata_CLASSWelcomewindowENDCLASS_t {
     uint offsetsAndSizes[6];
-    char stringdata0[12];
-    char stringdata1[24];
+    char stringdata0[14];
+    char stringdata1[22];
     char stringdata2[1];
 };
 #define QT_MOC_LITERAL(ofs, len) \
-    uint(sizeof(qt_meta_stringdata_CLASSLoginWindowENDCLASS_t::offsetsAndSizes) + ofs), len 
-Q_CONSTINIT static const qt_meta_stringdata_CLASSLoginWindowENDCLASS_t qt_meta_stringdata_CLASSLoginWindowENDCLASS = {
+    uint(sizeof(qt_meta_stringdata_CLASSWelcomewindowENDCLASS_t::offsetsAndSizes) + ofs), len 
+Q_CONSTINIT static const qt_meta_stringdata_CLASSWelcomewindowENDCLASS_t qt_meta_stringdata_CLASSWelcomewindowENDCLASS = {
     {
-        QT_MOC_LITERAL(0, 11),  // "LoginWindow"
-        QT_MOC_LITERAL(12, 23),  // "on_pushButton_3_clicked"
+        QT_MOC_LITERAL(0, 13),  // "Welcomewindow"
+        QT_MOC_LITERAL(14, 21),  // "on_pushButton_clicked"
         QT_MOC_LITERAL(36, 0)   // ""
     },
-    "LoginWindow",
-    "on_pushButton_3_clicked",
+    "Welcomewindow",
+    "on_pushButton_clicked",
     ""
 };
 #undef QT_MOC_LITERAL
 #endif // !QT_MOC_HAS_STRING_DATA
 } // unnamed namespace
 
-Q_CONSTINIT static const uint qt_meta_data_CLASSLoginWindowENDCLASS[] = {
+Q_CONSTINIT static const uint qt_meta_data_CLASSWelcomewindowENDCLASS[] = {
 
  // content:
       12,       // revision
@@ -87,50 +87,50 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSLoginWindowENDCLASS[] = {
        0        // eod
 };
 
-Q_CONSTINIT const QMetaObject LoginWindow::staticMetaObject = { {
-    QMetaObject::SuperData::link<QMainWindow::staticMetaObject>(),
-    qt_meta_stringdata_CLASSLoginWindowENDCLASS.offsetsAndSizes,
-    qt_meta_data_CLASSLoginWindowENDCLASS,
+Q_CONSTINIT const QMetaObject Welcomewindow::staticMetaObject = { {
+    QMetaObject::SuperData::link<QDialog::staticMetaObject>(),
+    qt_meta_stringdata_CLASSWelcomewindowENDCLASS.offsetsAndSizes,
+    qt_meta_data_CLASSWelcomewindowENDCLASS,
     qt_static_metacall,
     nullptr,
-    qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSLoginWindowENDCLASS_t,
+    qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSWelcomewindowENDCLASS_t,
         // Q_OBJECT / Q_GADGET
-        QtPrivate::TypeAndForceComplete<LoginWindow, std::true_type>,
-        // method 'on_pushButton_3_clicked'
+        QtPrivate::TypeAndForceComplete<Welcomewindow, std::true_type>,
+        // method 'on_pushButton_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
 } };
 
-void LoginWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void Welcomewindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<LoginWindow *>(_o);
+        auto *_t = static_cast<Welcomewindow *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->on_pushButton_3_clicked(); break;
+        case 0: _t->on_pushButton_clicked(); break;
         default: ;
         }
     }
     (void)_a;
 }
 
-const QMetaObject *LoginWindow::metaObject() const
+const QMetaObject *Welcomewindow::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *LoginWindow::qt_metacast(const char *_clname)
+void *Welcomewindow::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_CLASSLoginWindowENDCLASS.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_CLASSWelcomewindowENDCLASS.stringdata0))
         return static_cast<void*>(this);
-    return QMainWindow::qt_metacast(_clname);
+    return QDialog::qt_metacast(_clname);
 }
 
-int LoginWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int Welcomewindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QMainWindow::qt_metacall(_c, _id, _a);
+    _id = QDialog::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {

@@ -11,7 +11,6 @@ class Welcomewindow : public QDialog
 {
     Q_OBJECT
 public:
-
     explicit Welcomewindow(QString username, QWidget *parent = nullptr);
     ~Welcomewindow();
 
